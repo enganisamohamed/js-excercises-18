@@ -1,0 +1,565 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000;
+}
+
+.navbar {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+}
+
+.logo {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+}
+.logo span {
+  color: #ff4d2d;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.navbar nav a.active {
+  color: #ff4d2d;
+}
+
+.navbar .btn {
+  background: #ff4d2d;
+  padding: 10px 18px;
+  border-radius: 4px;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('https://cdn.prod.website-files.com/65d7b904c0af185c6d721f6f/667331aa70b1676c48307c53_Man-Chest-Fly-NewYorkCity.webp');
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+}
+
+.content {
+  position: relative;
+  color: white;
+  z-index: 2;
+}
+
+.content p {
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.content h1 {
+  font-size: 60px;
+  margin-bottom: 25px;
+}
+
+.content h1 span {
+  color: #ff4d2d;
+}
+
+.main-btn {
+  display: inline-block;
+  background: #ff4d2d;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.about {
+  padding: 100px 0;
+  background: #fff;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.section-title h2 span {
+  color: #ff4d2d;
+  margin-bottom: 20px;
+}
+
+.section-title .lines {
+  color: #ff4d2d;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.section-title p {
+  max-width: 600px;
+  margin: auto;
+  color: #777;
+  font-size: 14px;
+}
+
+.programs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.program-box {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+  background: #ff4d2d;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.program-box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.program-box p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.program-box a {
+  color: #ff4d2d;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta {
+  height: 350px;
+  background: url("https://blog.auna.pe/hs-fs/hubfs/rutina-de-gym-ejercicios-de-cardio.jpg?width=1280&height=720&name=rutina-de-gym-ejercicios-de-cardio.jpg") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cta-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.cta-content h2 {
+  font-size: 34px;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+
+.cta-content h2 span {
+  color: #ff4d2d;
+}
+
+.cta-content p {
+  font-size: 14px;
+  color: #dddddd;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.cta-btn {
+  background: #ff4d2d;
+  color: white;
+  padding: 12px 26px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.our-classes {
+  padding: 80px 0;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.section-title span {
+  color: #ff3c2f;
+}
+
+.section-title p {
+  color: #777;
+  max-width: 600px;
+  margin: 10px auto 0;
+}
+
+.classes-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.class-list {
+  flex: 1;
+}
+
+.class-item {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 15px;
+  border: none;
+  background: #f7f7f7;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  color: #090909;
+}
+
+.class-item.active {
+  color: #f09204;
+}
+
+.btn-all {
+  display: block;
+  margin-top: 20px;
+  background: #ff3c2f;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.class-details {
+  flex: 1.2;
+}
+
+.class-details img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.class-details h3 {
+  margin-bottom: 10px;
+}
+
+.class-details p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn-schedule {
+  background: #ff3c2f;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.schedule-section {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,1)),
+              url("https://blog.auna.pe/hs-fs/hubfs/rutina-de-gym-ejercicios-de-cardio.jpg?width=1280&height=720&name=rutina-de-gym-ejercicios-de-cardio.jpg") center/cover no-repeat;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.schedule-section h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.schedule-section h2 span {
+  color: #ff3c2f;
+}
+
+.subtitle {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.days {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.days span {
+  margin: 0 10px;
+  color: #ff3c2f;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.schedule-table {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 15px;
+  text-align: center;
+}
+
+.schedule-table th {
+  background: rgba(255,255,255,0.1);
+  font-weight: bold;
+}
+
+.schedule-table tr:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.trainers {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.section-title span {
+  color: #ff3c2f;
+}
+
+.section-title p {
+  max-width: 600px;
+  margin: 10px auto 0;
+  color: #777;
+}
+
+.trainer-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.trainer-card {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 25px;
+  text-align: center;
+  width: 300px;
+  border-radius: 6px;
+}
+
+.trainer-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.role {
+  color: #ff3c2f;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.trainer-card h3 {
+  margin: 10px 0;
+}
+
+.trainer-card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials a {
+  color: #000;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #ff3c2f;
+}
+
+.contact-section{
+  display: flex;
+  min-height: 500px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+    url("gym-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.map{
+  flex: 1;
+}
+
+.map iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.form-box{
+  flex: 1;
+  background: #fff;
+  margin: auto 40px;
+  padding: 40px;
+  border-radius: 6px;
+}
+
+.form-box h2{
+  margin-bottom: 20px;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+button{
+  padding: 12px 25px;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle{
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+
+
+/*  LARGE SCREENS */
+@media (max-width: 1200px) {
+  .services {
+    grid-template-columns: repeat(6, 1fr);
+
+  }
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+  .services {
+        grid-template-columns: repeat(5,1fr);
+
+  }
+}
+
+
+/* MOBILE */
+@media (max-width: 990px){
+  .menu-toggle{
+    display: block;
+  }
+
+  .navbar nav{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #111;
+    flex-direction: column;
+    text-align: center;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .navbar nav a{
+    margin: 0;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .navbar nav.show{
+    max-height: 500px;
+  }
+  
+}
+    
